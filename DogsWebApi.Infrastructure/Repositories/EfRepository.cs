@@ -16,7 +16,7 @@ namespace DogsWebApi.Infrastructure.Repositories
         { 
             _appDbContext = appDbContext; 
         }
-        public async Task AddAsync(T entity) => await _appDbContext.Set<T>().AddAsync(entity);
+        public async Task AddDog(T entity) => await _appDbContext.Set<T>().AddAsync(entity);
         public IQueryable<T> Query() => _appDbContext.Set<T>().AsQueryable();
         public async Task<IEnumerable<T>> GetAllAsync() => await _appDbContext.Set<T>().ToListAsync();
         public async Task<T?> GetByIdAsync(int id) => await _appDbContext.Set<T>().FindAsync(id);

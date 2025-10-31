@@ -27,8 +27,8 @@ namespace DogsWebApi.Infrastructure.ApplicationDbContext
             });
 
             modelBuilder.Entity<Dog>().HasData(
-                new Dog { DogID = Guid.NewGuid(), Name = "Neo", Color = "red&amber", TailLength = 22, Weight = 32 },
-                new Dog { DogID = Guid.NewGuid(), Name = "Jessy", Color = "black&white", TailLength = 7, Weight = 14 }
+                new Dog { DogID = new Guid("58f8f0b2-0903-4f66-8d76-2bb8b769c4c1"), Name = "Neo", Color = "red&amber", TailLength = 22, Weight = 32 },
+                new Dog { DogID = new Guid("e5c8c60c-1dca-40b3-9655-fa8457b5d6d8"), Name = "Jessy", Color = "black&white", TailLength = 7, Weight = 14 }
             );
         }
     }

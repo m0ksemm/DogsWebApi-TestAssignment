@@ -11,7 +11,7 @@ namespace DogsWebApi.Core.Domain.RepositoryContracts
         Task<IEnumerable<T>> GetAllAsync();
         IQueryable<T> Query();
         Task<T?> GetByIdAsync(int id);
-        Task AddAsync(T entity);
+        Task AddDog(T entity);
         Task SaveChangesAsync();
     }
 }

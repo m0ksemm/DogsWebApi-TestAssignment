@@ -83,7 +83,7 @@ namespace DogsWebApi.Core.Services
                 Weight = dogAddRequest.Weight
             };
 
-            await _repo.AddAsync(entity);
+            await _repo.AddDog(entity);
             await _repo.SaveChangesAsync();
 
             return new DogResponse

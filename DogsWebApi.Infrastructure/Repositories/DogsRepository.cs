@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DogsWebApi.Infrastructure.Repositories
 {
-    internal class DogsRepository : EfRepository<Dog>, IDogsRepository
+    public class DogsRepository : EfRepository<Dog>, IDogsRepository
     {
         public DogsRepository(AppDbContext appDbContext) : base(appDbContext) { }
 
