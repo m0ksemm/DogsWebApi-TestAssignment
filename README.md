@@ -118,7 +118,7 @@ GET /dogs?attribute=tail_length&order=asc&pageNumber=2&pageSize=5
 
 <hr/>
 
-<h2>🚦 Rate Limiting</h2>
+<h2> Rate Limiting</h2>
 
 <p>There should be a setting that says how many requests the service can handle, for example, <b>10 requests per second</b>.
 In case there are more incoming requests than in configuration, application should return:</p>
@@ -141,7 +141,7 @@ In case there are more incoming requests than in configuration, application shou
 
 <hr/>
 
-<h2>🧪 Unit Tests</h2>
+<h2> Unit Tests</h2>
 
 <p>All logic in the application should be covered by unit tests, including:</p>
 
@@ -154,6 +154,6 @@ In case there are more incoming requests than in configuration, application shou
 
 <hr/>
 
-<h2>📄 Version</h2>
+<h2> Version</h2>
 
 <p><b>Dogshouseservice.Version1.0.1</b></p>
